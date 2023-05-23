@@ -1,0 +1,152 @@
+.family-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+  justify-content: center;
+}
+.ryota-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  max-width: 626px;
+  max-height: 392px;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.purpose {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0px, 0.4rem + 1vw, 18px);
+  line-height: 160%;
+  color: #d96f60;
+}
+.question {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0px, 0.75rem + 1vw, 40px);
+  line-height: 120%;
+  color: #211c1c;
+}
+.list {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0px, 0.4rem + 1vw, 18px);
+  line-height: 160%;
+  padding-left: 18px;
+
+  color: #645455;
+}
+.image-stuff {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -60px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.family-pic {
+  max-width: 100%;
+  block-size: auto;
+}
+.image-title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0px, 0.4rem + 1vw, 18px);
+  line-height: 146%;
+  color: #ffffff;
+}
+
+.contact-info {
+  display: flex;
+  gap: 16px;
+  font-size: clamp(0px, 0.75rem + 1vw, 40px);
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 16px;
+
+  background: #d96f60;
+  border-radius: 12px;
+  border: none;
+}
+.mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 18px;
+
+  gap: 16px;
+  border: none;
+  border: 2px solid #211c1c;
+  border-radius: 12px;
+}
+.contact-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 20px;
+  font-size: clamp(0px, 0.4rem + 1vw, 18px);
+  color: #ffffff;
+}
+.phone {
+  max-width: 20px;
+}
+.mobile-nr {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 20px;
+  font-size: clamp(0px, 0.4rem + 1vw, 18px);
+  color: #000000;
+}
+@media (max-width: 840px) {
+  .family-container {
+    flex-direction: column;
+  }
+  .arrow {
+    max-width: 12px;
+  }
+  .phone {
+    max-width: 12px;
+  }
+  .ryota-info {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    height: 40px;
+  }
+  .mobile {
+    height: 40px;
+  }
+  .ryota-info {
+    gap: 10px;
+  }
+}
