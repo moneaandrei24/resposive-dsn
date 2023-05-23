@@ -1,11 +1,10 @@
 .page {
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 .despre-text {
-  width: 568px;
-  height: 29px;
-
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -16,9 +15,6 @@
 }
 
 .title-text {
-  width: 568px;
-  height: 144px;
-
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
@@ -29,9 +25,6 @@
 }
 
 .prezentare-text {
-  width: 568px;
-  height: 116px;
-
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -46,9 +39,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-
-  width: 568px;
-  height: 181px;
 }
 .sectiune1 {
   display: flex;
@@ -57,21 +47,14 @@
   padding: 0px;
   gap: 24px;
   margin: auto;
-
-  width: 568px;
-  height: 321px;
 }
 .component {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 64px 48px;
+  padding: 30px 48px;
   gap: 48px;
-  justify-content: space-around;
-  width: auto;
-  height: auto;
 
-  position: relative;
   border: 1px solid #000000;
   border-radius: 24px;
 }
@@ -85,10 +68,10 @@
     flex-direction: column;
   }
   .despre {
-    height: 130px;
+    max-height: 80px;
   }
   .component {
-    gap: 24px;
+    gap: 50px;
   }
 }
 
@@ -100,15 +83,94 @@ img {
 
 @media (max-width: 680px) {
   .title-text {
-    width: 400px;
+    max-width: 400px;
   }
   .prezentare-text {
-    width: 400px;
+    max-width: 400px;
   }
   .despre {
-    height: 100px;
+    max-height: 80px;
   }
   .component {
-    gap: 0px;
+    gap: 30px;
+  }
+}
+
+.options {
+  display: flex;
+  gap: 32px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 48px;
+  flex-basis: 30%;
+  background: #dfe0d6;
+  border-radius: 24px;
+}
+.button {
+  align-self: center;
+  margin-left: -50px;
+}
+.title-obtion {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(0px, 0.5rem + 1.5vw, 24px);
+  line-height: 141.5%;
+
+  color: #211c1c;
+}
+.text-obtion {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0px, 0.5rem + 1.5vw, 18px);
+  line-height: 141.5%;
+
+  color: #645455;
+}
+@media (max-width: 950px) {
+  .options {
+    flex-wrap: wrap;
+  }
+  .one {
+    flex-basis: 40%;
+  }
+  .two {
+    flex-basis: 40%;
+  }
+  .three {
+    flex-basis: 40%;
+  }
+  .card {
+    gap: 32px;
+  }
+}
+@media (max-width: 830px) {
+  .card {
+    gap: 25px;
+  }
+  .one {
+    flex-basis: 35%;
+  }
+  .two {
+    flex-basis: 35%;
+  }
+  .three {
+    flex-basis: 35%;
+  }
+}
+@media (max-width: 564px) {
+  .one {
+    flex-basis: 100%;
+  }
+  .two {
+    flex-basis: 100%;
+  }
+  .three {
+    flex-basis: 81%;
   }
 }
